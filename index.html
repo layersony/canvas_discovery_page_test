@@ -4,6 +4,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
   <link
@@ -104,57 +105,36 @@
     }
   </script>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-
-    body {
-      background-color: #f8f9fb;
-    }
-  </style>
-  <style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
 </head>
 
 <body class="font-body-md text-on-background relative overflow-x-hidden">
-  <!-- Global Page Background Shapes -->
   <div class="fixed inset-0 -z-20 pointer-events-none select-none overflow-hidden">
-    <!-- Orange Square Top Left -->
-    <div class="absolute top-20 left-[5%] w-24 h-24 bg-[#fa510f] opacity-[0.04] rotate-12 rounded-xl"></div>
-    <!-- Navy Rectangle Mid Right -->
-    <div class="absolute top-[35%] right-[2%] w-32 h-10 bg-[#0b1b38] opacity-[0.03] -rotate-12 rounded-md"></div>
-    <!-- Navy Square Bottom Left -->
-    <div class="absolute bottom-[20%] left-[8%] w-16 h-16 bg-[#0b1b38] opacity-[0.05] rotate-45 rounded-sm"></div>
-    <!-- Orange Rectangle Bottom Right -->
-    <div class="absolute bottom-[10%] right-[10%] w-20 h-6 bg-[#fa510f] opacity-[0.03] rotate-[15deg]"></div>
-    <!-- Extra Shapes for Spacing -->
-    <div class="absolute top-[60%] right-[15%] w-20 h-20 bg-[#fa510f] opacity-[0.02] -rotate-6 rounded-lg"></div>
-    <div class="absolute top-[10%] right-[30%] w-12 h-4 bg-[#0b1b38] opacity-[0.04] rotate-12"></div>
-    <div class="absolute bottom-[40%] left-[25%] w-8 h-24 bg-[#fa510f] opacity-[0.02] rotate-45 rounded-sm"></div>
+    <div class="bg-shape bg-shape--orange-top-left"></div>
+    <div class="bg-shape bg-shape--navy-mid-right"></div>
+    <div class="bg-shape bg-shape--navy-bottom-left"></div> 
+    <div class="bg-shape bg-shape--orange-bottom-right"></div>
+    <div class="bg-shape bg-shape--orange-center-right"></div>
+    <div class="bg-shape bg-shape--navy-top-center"></div>
+    <div class="bg-shape bg-shape--orange-center-left"></div>
   </div>
-  <!-- Top Navigation Shell -->
-  <header class="bg-white border-b border-gray-200 shadow-[0_4px_20px_-4px_rgba(16,31,60,0.08)] sticky top-0 z-50">
+
+  <header class="site-header bg-white border-b border-gray-200 sticky top-0 z-50">
     <div class="flex justify-between items-center w-full px-6 py-3 max-w-7xl mx-auto">
       <div class="flex items-center gap-2">
-        <img alt="Moringa School Logo" class="h-8 md:h-10 w-auto"
-          src="https://lh3.googleusercontent.com/aida/ADBb0ugkj358LYp1He8hURkEOYlKcLFU-VxEt6j2BcFClpWN3I6yH-qQ4z005X4Ibn8FrC-ug41yZ_7LSIWcjChGGW_KCQ_arf8LIVpMFWbb4jAo12cLzJ1EPAIvJWhZ5C2qIGtkwIF3oNO_4DL5YunBKEHMz2mMQl1Gc65esVAXL74nE4KhM9bpKGg51ktvNW4yOC_UdOdlY9ukSAmbJpHO7vI0PO9AwcMqZLnOpD-EjUAoDkXbG2wAFAGoPNVtp1smSiUeVFEaJnjM4g" />
+        <img alt="Moringa School Logo" class="h-11 md:h-11 w-auto"
+          src="assets/moringa_logo.png" />
       </div>
       <button
-        class="font-['Lexend'] font-bold text-[#fa510f] hover:bg-gray-50 transition-colors px-4 py-2 rounded-lg active:scale-95 duration-200">
+        class="nav-support-btn hover:bg-gray-50 transition-colors px-4 py-2 rounded-lg active:scale-95 duration-200">
         Support
       </button>
     </div>
   </header>
   <main class="min-h-screen max-w-4xl mx-auto px-6 py-12 relative z-10">
-    <!-- Hero Section -->
     <section class="text-center mb-12">
       <div class="inline-flex items-center justify-center p-4 mb-6">
         <img alt="Moringa Symbol" class="w-24 h-24"
-          src="https://lh3.googleusercontent.com/aida/ADBb0ujhGlGP7QIY7jLe8swIdV4qc3LTxC3xw3QraLETgNaCfmDE3E2AQcY4eJHOIRYIQn1HD9Yv7oQpbhR2VLJheluE8KErzeBK7zLxNJ3OhKN3BKavulw9OLLYXiVH4Pyu3xL1S8qG9LNzCVAwkkw2iquYJ0e7cdt2RLtRee5L8fAn1ekwi84yNCwNRLIzJUes59acpaZMMqQ-NH3I-JZe5AZkgAhTtoEgQZYDZY4SY-b85yEY7tNx0HpB7SNZyxJvnQmLbKWojOml" />
+          src="assets/logo.png" />
       </div>
       <h1 class="font-headline-xl text-on-background mb-4">Welcome to Moringa School</h1>
       <p class="font-body-lg text-secondary max-w-2xl mx-auto">
@@ -162,42 +142,39 @@
         tools, or partner resources.
       </p>
     </section>
-    <!-- Role Discovery Search -->
     <div
       class="p-6 rounded-xl border-l-4 mb-8 flex items-start gap-4 bg-secondary-container text-on-secondary-container border-secondary">
       <span class="material-symbols-outlined text-2xl text-secondary" data-icon="info">info</span>
-      <div>
+      <div class="min-w-0">
         <h4 class="font-headline-md text-on-secondary-container mb-2">Mandatory Student Email Access</h4>
         <p class="font-body-md">
           Please note that you can <strong>only</strong> access the Canvas LMS using your official student email
           address.
           Login attempts using personal or non-student emails will be rejected.
         </p>
-        <p class="font-label-md mt-2 opacity-80">
-          Example: john.doe@student.moringaschool.com or firstname.lastname@student.moringaschool.com
+        <p class="font-label-md mt-2 opacity-80 break-words">
+          Example: <br>john.doe@student.moringaschool.com <br>or <br> jane.doe@student.moringaschool.com
         </p>
       </div>
     </div>
-    <!-- Login Options List -->
+
     <section class="space-y-4 mb-12">
       <h2 class="font-headline-md text-on-background px-2">Access Portals</h2>
-      <!-- List Item: Student -->
-      <a class="flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary hover:shadow-[0_4px_20px_-4px_rgba(16,31,60,0.15)] rounded-xl transition-all group"
+      <a class="portal-card flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary rounded-xl transition-all group"
         href="#">
         <div
-          class="flex-shrink-0 w-16 h-16 bg-primary-fixed rounded-lg flex items-center justify-center text-[#fa510f] group-hover:bg-primary group-hover:text-white transition-colors">
+          class="portal-card__icon--student flex-shrink-0 w-16 h-16 bg-primary-fixed rounded-lg flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-colors">
           <span class="material-symbols-outlined text-3xl" data-icon="person">person</span>
         </div>
         <div class="flex-grow">
-          <h3 class="font-headline-md text-on-background group-hover:text-primary transition-colors">Student Portal</h3>
+          <h3 class="font-headline-md text-on-background group-hover:text-primary transition-colors">Student Dashboard</h3>
           <p class="font-body-md text-secondary">Access your courses, curriculum, and peer community.</p>
         </div>
         <span
           class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all"
           data-icon="chevron_right">chevron_right</span>
       </a>
-      <!-- List Item: Teacher -->
-      <a class="flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary hover:shadow-[0_4px_20px_-4px_rgba(16,31,60,0.15)] rounded-xl transition-all group"
+      <a class="portal-card flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary rounded-xl transition-all group"
         href="#">
         <div
           class="flex-shrink-0 w-16 h-16 bg-secondary-fixed rounded-lg flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-white transition-colors">
@@ -212,8 +189,7 @@
           class="material-symbols-outlined text-outline group-hover:text-secondary group-hover:translate-x-1 transition-all"
           data-icon="chevron_right">chevron_right</span>
       </a>
-      <!-- List Item: Parent -->
-      <a class="flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary hover:shadow-[0_4px_20px_-4px_rgba(16,31,60,0.15)] rounded-xl transition-all group"
+      <a class="portal-card flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary rounded-xl transition-all group"
         href="#">
         <div
           class="flex-shrink-0 w-16 h-16 bg-tertiary-fixed rounded-lg flex items-center justify-center text-tertiary group-hover:bg-tertiary group-hover:text-white transition-colors">
@@ -228,8 +204,7 @@
           class="material-symbols-outlined text-outline group-hover:text-tertiary group-hover:translate-x-1 transition-all"
           data-icon="chevron_right">chevron_right</span>
       </a>
-      <!-- List Item: Partner -->
-      <a class="flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary hover:shadow-[0_4px_20px_-4px_rgba(16,31,60,0.15)] rounded-xl transition-all group"
+      <a class="portal-card flex items-center gap-6 p-6 bg-white/90 backdrop-blur-sm border border-surface-variant hover:border-primary rounded-xl transition-all group"
         href="#">
         <div
           class="flex-shrink-0 w-16 h-16 bg-surface-container-high rounded-lg flex items-center justify-center text-on-surface-variant group-hover:bg-on-surface-variant group-hover:text-white transition-colors">
@@ -245,9 +220,9 @@
           data-icon="chevron_right">chevron_right</span>
       </a>
     </section>
-    <!-- Support Center Section -->
+
     <section
-      class="bg-white/90 backdrop-blur-sm rounded-xl shadow-[0_4px_20px_-4px_rgba(16,31,60,0.08)] overflow-hidden border border-surface-variant">
+      class="support-section bg-white/90 backdrop-blur-sm rounded-xl overflow-hidden border border-surface-variant">
       <div class="p-8">
         <div class="flex items-center gap-3 mb-6">
           <span class="material-symbols-outlined text-primary" data-icon="contact_support">contact_support</span>
@@ -256,7 +231,7 @@
         <div class="grid md:grid-cols-2 gap-8">
           <div>
             <h4 class="font-label-md text-primary mb-2">Technical Assistance</h4>
-            <p class="font-body-sm text-secondary mb-4">Having trouble logging in? Our technical team is available 24/7
+            <p class="font-body-sm text-secondary mb-4">Having trouble logging in? <br>Our technical team is available
               to help you resolve access issues.</p>
             <a class="text-primary font-label-md flex items-center gap-1 hover:underline" href="#">
               Visit Helpdesk <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
@@ -275,12 +250,9 @@
       <div
         class="bg-surface-container-low/80 backdrop-blur-sm px-8 py-4 flex flex-wrap gap-4 items-center justify-between">
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-secondary text-sm" data-icon="info">info</span>
-          <span class="text-body-sm text-secondary">Current Campus Status: <span
-              class="text-green-600 font-bold">Operational</span></span>
         </div>
         <button
-          class="bg-primary text-white font-label-md px-6 py-2 rounded-lg hover:bg-[#d43f00] transition-colors active:scale-95">
+          class="live-chat-btn bg-primary text-white font-label-md px-6 py-2 rounded-lg transition-colors active:scale-95">
           Live Chat Support
         </button>
       </div>
@@ -291,25 +263,23 @@
       data-alt="An abstract digital background for an educational technology platform. Soft gradients of light gray and white are punctuated by sharp, energetic architectural lines in a vibrant orange hue. The lighting is bright and professional, creating an atmosphere of innovation and academic excellence. The overall aesthetic is clean, minimalist, and corporate, representing the stability of a university and the speed of a tech bootcamp."
       src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8o-WdRtTaZs7Sutraw-DPdsNV5q-OsdnQ6BGmMeNusm9is1CWOne4PyN-XsDsag6uv-lGpXz2xGTWtBnMmGYpIal2rGz6FC2BCSpNJzXVqEnaW44PQjADfHtaf8xCSGpwc6PXZnjxqy4g1jDSE7pOJvY1ID2cLMI7t_LMnMYBk8qZI2FYs5jqRxzKzQHe4iZ_AFnnXNobfNN48E2-1aI7LoR9Ae3rbJG9iVNY3GUMyRYUzoQ2kmTLe_JlmerALNUDigfWCHmi2CY" />
   </div>
-  <!-- Footer -->
+
   <footer class="bg-gray-50/90 backdrop-blur-sm border-t border-gray-200 relative z-10">
     <div class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
       <div class="text-center md:text-left">
-        <p class="font-['Lexend'] text-sm text-gray-500">© 2024 Moringa School. Empowering the next generation of tech
+        <p class="footer-text text-sm text-gray-500">© <span id="current-year"></span> Moringa School. Empowering the next generation of tech
           leaders.</p>
       </div>
       <div class="flex flex-wrap justify-center gap-6">
-        <a class="font-['Lexend'] text-sm text-gray-500 hover:text-[#fa510f] hover:underline decoration-[#fa510f] decoration-2 underline-offset-4 transition-all duration-300"
-          href="#">Privacy Policy</a>
-        <a class="font-['Lexend'] text-sm text-gray-500 hover:text-[#fa510f] hover:underline decoration-[#fa510f] decoration-2 underline-offset-4 transition-all duration-300"
-          href="#">Terms of Service</a>
-        <a class="font-['Lexend'] text-sm text-gray-500 hover:text-[#fa510f] hover:underline decoration-[#fa510f] decoration-2 underline-offset-4 transition-all duration-300"
-          href="#">Campus Status</a>
-        <a class="font-['Lexend'] text-sm text-gray-500 hover:text-[#fa510f] hover:underline decoration-[#fa510f] decoration-2 underline-offset-4 transition-all duration-300"
-          href="#">Contact Helpdesk</a>
+        <a class="footer-link text-sm text-gray-500 transition-all duration-300" href="#">Privacy Policy</a>
+        <a class="footer-link text-sm text-gray-500 transition-all duration-300" href="#">Terms of Service</a>
+        <a class="footer-link text-sm text-gray-500 transition-all duration-300" href="#">Contact Helpdesk</a>
       </div>
     </div>
   </footer>
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>

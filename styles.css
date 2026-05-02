@@ -1,0 +1,166 @@
+/* ===========================
+   CSS Custom Properties
+=========================== */
+:root {
+  --color-orange: #fa510f;
+  --color-orange-dark: #d43f00;
+  --color-navy: #0b1b38;
+  --color-surface: #f8f9fb;
+  --shadow-card: 0 4px 20px -4px rgba(16, 31, 60, 0.08);
+  --shadow-card-hover: 0 4px 20px -4px rgba(16, 31, 60, 0.15);
+  --font-brand: 'Lexend', sans-serif;
+}
+
+/* ===========================
+   Base Styles
+=========================== */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+body {
+  background-color: var(--color-surface);
+  min-height: max(884px, 100dvh);
+}
+
+/* ===========================
+   Background Decorative Shapes
+=========================== */
+.bg-shape {
+  position: absolute;
+}
+
+.bg-shape--orange-top-left {
+  top: 5rem;
+  left: 5%;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-orange);
+  opacity: 0.04;
+  transform: rotate(12deg);
+  border-radius: 0.75rem;
+}
+
+.bg-shape--navy-mid-right {
+  top: 35%;
+  right: 2%;
+  width: 8rem;
+  height: 2.5rem;
+  background-color: var(--color-navy);
+  opacity: 0.03;
+  transform: rotate(-12deg);
+  border-radius: 0.375rem;
+}
+
+.bg-shape--navy-bottom-left {
+  bottom: 20%;
+  left: 8%;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--color-navy);
+  opacity: 0.05;
+  transform: rotate(45deg);
+  border-radius: 0.125rem;
+}
+
+.bg-shape--orange-bottom-right {
+  bottom: 10%;
+  right: 10%;
+  width: 5rem;
+  height: 1.5rem;
+  background-color: var(--color-orange);
+  opacity: 0.03;
+  transform: rotate(15deg);
+}
+
+.bg-shape--orange-center-right {
+  top: 60%;
+  right: 15%;
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--color-orange);
+  opacity: 0.02;
+  transform: rotate(-6deg);
+  border-radius: 0.5rem;
+}
+
+.bg-shape--navy-top-center {
+  top: 10%;
+  right: 30%;
+  width: 3rem;
+  height: 1rem;
+  background-color: var(--color-navy);
+  opacity: 0.04;
+  transform: rotate(12deg);
+}
+
+.bg-shape--orange-center-left {
+  bottom: 40%;
+  left: 25%;
+  width: 2rem;
+  height: 6rem;
+  background-color: var(--color-orange);
+  opacity: 0.02;
+  transform: rotate(45deg);
+  border-radius: 0.125rem;
+}
+
+/* ===========================
+   Header
+=========================== */
+.site-header {
+  box-shadow: var(--shadow-card);
+}
+
+/* ===========================
+   Navigation
+=========================== */
+.nav-support-btn {
+  font-family: var(--font-brand);
+  font-weight: 700;
+  color: var(--color-orange);
+}
+
+/* ===========================
+   Portal Cards
+=========================== */
+.portal-card:hover {
+  box-shadow: var(--shadow-card-hover);
+}
+
+.portal-card__icon--student {
+  color: var(--color-orange);
+}
+
+/* ===========================
+   Support Section
+=========================== */
+.support-section {
+  box-shadow: var(--shadow-card);
+}
+
+/* ===========================
+   Live Chat Button
+=========================== */
+.live-chat-btn:hover {
+  background-color: var(--color-orange-dark);
+}
+
+/* ===========================
+   Footer
+=========================== */
+.footer-text {
+  font-family: var(--font-brand);
+}
+
+.footer-link {
+  font-family: var(--font-brand);
+}
+
+.footer-link:hover {
+  color: var(--color-orange);
+  text-decoration: underline;
+  text-decoration-color: var(--color-orange);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
