@@ -137,6 +137,33 @@ body {
 =========================== */
 .support-section {
   box-shadow: var(--shadow-card);
+  margin-top: 40px;
+}
+
+/* ===========================
+   Contact List
+=========================== */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: inherit;
+}
+
+.contact-list .material-symbols-outlined {
+  font-size: 16px;
+  color: var(--color-orange-dark);
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
 }
 
 /* ===========================
